@@ -1,26 +1,639 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
+    <title>Home</title>
     <meta charset="utf-8">
-    <title>Кавуся</title>
-    <style>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
 
-        body .container {
-            width: 100%;
-            height: 5257px;
-            background: url('images/tmp-site.png') 50% 0 no-repeat;
-            background-size: contain;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a> 
     </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+ 
+    <script src='js/device.min.js'></script> 
+</head>
+
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+
+        <div class="camera_container">
+            <div id="camera" class="camera_wrap">
+                <div data-thumb="images/slide01-thumb.png" data-src="images/slide01.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+                <div data-thumb="images/slide02-thumb.png" data-src="images/slide02.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+                <div data-thumb="images/slide03-thumb.png" data-src="images/slide03.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand wow fadeIn">
+                <!--<h1 class="brand_name">
+                  &lt;!&ndash;  <a href="./">Cafe</a>&ndash;&gt;
+                    
+                </h1>-->
+                <img class="kavusya-logo" src="images/kavusya-logo.svg">
+            </div>
+        </div>
+
+
+
+        <!--<div class="toggle-menu-container">
+            <nav class="nav">
+                <div class="nav_title"></div>
+                <a class="sf-menu-toggle fa fa-bars" href="#"></a>
+                <ul class="sf-menu">
+                    <li class="active">
+                        <a href="./">Home</a>
+                    </li>
+                    &lt;!&ndash;<li>
+                        <a href="index-1.html">About</a>
+                        <ul>
+                            <li>
+                                <a href="#">Quisque nulla</a>
+                            </li>
+                            <li>
+                                <a href="#">Vestibulum libero</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Lorem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dolor</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sit amet</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Vivamus eget nibh</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index-2.html">What We Do</a>
+                    </li>&ndash;&gt;
+                    <li>
+                        <a href="index-3.html">Menu</a>
+                    </li>
+                    &lt;!&ndash;<li>
+                        <a href="index-4.html">Contacts</a>
+                    </li>&ndash;&gt;
+                </ul>
+            </nav>
+
+
+        </div>-->
+
+
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well">
+            <div class="container">
+                <h2><em>Завiтайте</em>до Кавусi</h2>
+                <div class="row">
+                    <div class="grid_6">
+                        <!--<div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/page-1_img01.jpg" alt=""></div></div>-->
+                        <p class="center indents-1">
+                            Кавуся - це зовсім крихітна кав’ярня, фактично продовження парадного. Ми знаємо наших клієнтів, та робимо каву саме так, я вони люблять.
+                            Ми як добрі сусіди, до яких приємно забігти за келихом смачної кави та гарним настроєм перед початком робочого дня.
+                        </p>
+                    </div>
+                    <div class="grid_6">
+                        <!--<div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/page-1_img02.jpg" alt=""></div></div>-->
+                        <p class="center indents-1">
+                            Ми дуже піклуємося про якість нашої кави. Каву нам обжарюють перед доставкою до кав’ярні. Ми замовляємо невеличкими упаковкамі, та піклуємся, щоб на протязі дня кава готувалася лише зі свіжозмелених  зерен. Нашу кавомашину привезено для нас з Италії, а воду ми використовуємо лише з арезіанського джерела. Тому наша кава така смачна.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="decoration"><!--<a href="#" class="btn">Read more</a>--></div>
+                <h2><em>Свято капучино</em>в Кавусi</h2>
+            </div>            
+            <div class="gallery">
+
+
+
+            <div class="gallery-section">
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-1.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Iрландський крем
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-2.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Подвiйна кориця
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-3.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Полуниця-м’ята
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-4.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Ванiльний
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-5.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Шоколадно-
+                    горiховий
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-6.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    М’ятно-
+                    шоколадний
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-7.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Iмбiрний
+                    пряник
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-8.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Горiховий
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-9.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Шоколадний
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-10.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Грушевий
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-11.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Вишня в шоколадi
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="dallery-img">
+                    <img src="images/menu/menu-12.jpg" alt="">
+                </div>
+                <div class="gallery-title">
+                    Подвiйний шоколад
+                </div>
+            </div>
+
+
+
+
+            </div>
+            <div class="gallery-section">
+                <h1>Дитяче меню :)</h1>
+
+                <div class="gallery-item">
+                    <div class="dallery-img">
+                        <img src="images/menu/menu-13.jpg" alt="">
+                    </div>
+                    <div class="gallery-title">
+                        Медочок:)
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="dallery-img">
+                        <img src="images/menu/menu-14.jpg" alt="">
+                    </div>
+                    <div class="gallery-title">
+                        Карамелька:)
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="dallery-img">
+                        <img src="images/menu/menu-15.jpg" alt="">
+                    </div>
+                    <div class="gallery-title">
+                        Iриска:)
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="dallery-img">
+                        <img src="images/menu/menu-16.jpg" alt="">
+                    </div>
+                    <div class="gallery-title">
+                        Горячий шоколад
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+                <div class="gallery_col-1">
+
+
+
+
+
+
+
+
+
+
+                    <!--<a data-fancybox-group="gallery" href="images/menu/menu-1.jpg" class="menu_gallery_item menu_thumb lazy-img">
+                      111111111  <img data-src="images/menu/menu-1.jpg" alt="" style="border: 1px solid red;">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>1111Lorem Blandit</em></p>
+                                <p>Кавуся - це зовсім крихітна кав’ярня, фактично продовження парадного. Ми знаємо наших клієнтів, та робимо каву саме так, я вони люблять.
+                                    Ми як добрі сусіди, до яких приємно забігти за келихом смачної кави та гарним настроєм перед початком робочого дня.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a data-fancybox-group="gallery" href="images/menu/menu-1.jpg" class="menu_gallery_item menu_thumb lazy-img">
+                        <img data-src="images/menu/menu-1.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Кавуся - це зовсім крихітна кав’ярня, фактично продовження парадного. Ми знаємо наших клієнтів, та робимо каву саме так, я вони люблять.
+                                    Ми як добрі сусіди, до яких приємно забігти за келихом смачної кави та гарним настроєм перед початком робочого дня.</p>
+                            </div>
+                        </div>
+                    </a>
+-->
+
+
+
+
+
+
+
+
+
+
+                    <!--<a data-fancybox-group="gallery" href="images/page-1_img03_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
+                        <img data-src="images/page-1_img03.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Кавуся - це зовсім крихітна кав’ярня, фактично продовження парадного. Ми знаємо наших клієнтів, та робимо каву саме так, я вони люблять.
+                                    Ми як добрі сусіди, до яких приємно забігти за келихом смачної кави та гарним настроєм перед початком робочого дня.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img04_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
+                        <img data-src="images/page-1_img04.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Ми дуже піклуємося про якість нашої кави. Каву нам обжарюють перед доставкою до кав’ярні. Ми намовляємо невеличкими упаковкамі, та піклуємося, щоб на протязі дня кава готувалася лише зі свіжозмелених  зерен. Нашу кавомашину привезено для нас з Италії, а воду ми використовуємо лише з арезіанського джерела. Тому наша кава така смачна.
+                                </p>
+                                <p>
+                                    Ми розробили власне меню. Наші напої  гарні, різноманітні та смачні.  У нас все зрозуміло та демократично.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img05_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
+                        <img data-src="images/page-1_img05.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+                <!--<div class="gallery_col-2">
+                    <a data-fancybox-group="gallery" href="images/page-1_img06_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 52.48322147651007%;">
+                        <img data-src="images/page-1_img06.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img07_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 55.97315436241611%;">
+                        <img data-src="images/page-1_img07.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img08_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 96.10738255033557%;">
+                        <img data-src="images/page-1_img08.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+                <!--<div class="gallery_col-3">
+                    <a data-fancybox-group="gallery" href="images/page-1_img09_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <img data-src="images/page-1_img09.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img10_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 72.23168654173765%;">
+                        <img data-src="images/page-1_img10.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-fancybox-group="gallery" href="images/page-1_img11_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
+                        <img data-src="images/page-1_img11.jpg" alt="">
+                        <div class="gallery_overlay">
+                            <div class="gallery_caption">
+                                <p><em>Lorem Blandit</em></p>
+                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>-->
+            </div>
+        </section>
+        <section class="parallax parallax1" data-parallax-speed="-0.4">
+            <div class="container">
+                <h2><em>Наша</em>кава</h2>
+
+                <div class="row">
+                    <div class="grid_6">
+                        <p class="center indents-1">
+                            <span class="styled">Гондурас</span> - невеличка країна, що знаходиться у
+                            пiвнiчнiй частинi Центральної Америки.
+                            Тропiчний клiмат, родюча, низької кислотності грунт вулканічного походження, збагачена органічними елементами і мінералами,
+                            дозволяють вирощувати каву високої якості з прекрасними смаковими характеристиками і чудовим ароматом.
+
+                        </p>
+                    </div>
+                    <div class="grid_6">
+                        <p class="center indents-1">
+                       <span class="styled">Кава Гондурас </span> -
+                        це кращі сорти Арабіки, вирощені на плантаціях, розташованих на схилах гір вулканічного походження. В умовах високогір'я, більш ніж 1500 метрів над рівнем моря, кавові дерева ростуть повільніше, але кавові зерна набувають більш вишукані смак і аромат.
+                        </p>
+                    </div>
+                </div>
+                <!--<p class="indents-2">Ми розробили власне меню. Наші напої  гарні, різноманітні та смачні.  У нас все зрозуміло та демократично. </p>-->
+                <!--<a href="#" class="btn">View full menu</a>-->
+            </div>
+        </section>
+        <section class="well well__offset-1 bg-1">
+            <div class="prices-container">
+
+
+                <table class="prices">
+                    <tr>
+                        <td class="item"></td>
+                        <td class="sm"><div class="small-cup"></div></td>
+                        <td class="m"><div class="medium-cup"></div></td>
+                        <td class="l"><div class="large-cup"></div></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Еспресо</td>
+                        <td class="sm">10</td>
+                        <td class="m"></td>
+                        <td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Подвiйне еспресо</td>
+                        <td class="sm">19</td>
+                        <td class="m"></td>
+                        <td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Еспресо з молоко</td>
+                        <td class="sm">12</td>
+                        <td class="m"></td>
+                        <td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Американо</td>
+                        <td class="sm"></td>
+                        <td class="m">10</td>
+                        <td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Капучино</td>
+                        <td class="sm"></td>
+                        <td class="m">14</td>
+                        <td class="l">18</td>
+                    </tr>
+                    <tr class="menu-row">
+
+                        <td class="item">Капучино вiд кавусi</td>
+                        <td class="sm"></td>
+                        <td class="m">18</td>
+                        <td class="l">21</td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Лате</td>
+                        <td class="sm"></td>
+                        <td class="m">14</td>
+                        <td class="l">18</td>
+                    </tr>
+                    <tr>
+                        <td class="item"></td><td class="sm"></td><td class="m"></td><td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Горячий шоколад</td>
+                        <td class="sm"></td>
+                        <td class="m">14</td>
+                        <td class="l">18</td>
+                    </tr>
+                    <tr>
+                        <td class="item"></td><td class="sm"></td><td class="m"></td><td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Молоко</td><td class="sm">4</td><td class="m"></td><td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Сироп</td><td class="sm">4</td><td class="m"></td><td class="l"></td>
+                    </tr>
+                    <tr class="menu-row">
+                        <td class="item">Мед</td><td class="sm">4</td><td class="m"></td><td class="l"></td>
+                    </tr>
+                </table>
+                <!--<h2><em>Our </em>Cooks</h2>
+                <div class="row row__offset-1">
+                    <div class="grid_4">
+                        <figure>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img12.jpg" alt=""></div>
+                            <figcaption>Kevin Grey</figcaption>
+                        </figure>
+                        <h3>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
+                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                    </div>
+                    <div class="grid_4">
+                        <figure>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img13.jpg" alt=""></div>
+                            <figcaption>Linda Klein</figcaption>
+                        </figure>
+                        <h3>Oeteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
+                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                    </div>
+                    <div class="grid_4">
+                        <figure>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img14.jpg" alt=""></div>
+                            <figcaption>Ann Shelton</figcaption>
+                        </figure>
+                        <h3>Koteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
+                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
+                    </div>
+                </div>
+                <div class="decoration"><a href="#" class="btn">Read more</a></div>-->
+            </div>
+        </section>
+        <section class="well well__offset-2">
+            <div class="center">
+                <h2><em>Нашi </em>правила:</h2>
+
+
+                <div class="explanations">
+                    <div class="explanation-item">
+                        Ми використовуємо <br>
+                        тiлькi<span class="bigger"> 100% Арабiку, </span><br>
+                        що обжарюється<br>
+                        безпосереднью перед
+                        доставкою до нас
+
+                    </div>
+                    <div class="division"></div>
+                    <div class="explanation-item">
+                        Ми використовуємо<br>
+                        тiльки <span class="bigger">артезiанську воду</span><br>
+
+                        для приготування кави
+
+                    </div>
+                    <div class="division"></div>
+                    <div class="explanation-item">
+                        Наша кавомашина привезена<br>
+                        з Iталi ,<br>
+                        кра ни, де якiсть приготування еспресо<br>
+                        на першому мiсцi
+
+
+                    </div>
+                    <div class="division"></div>
+                    <div class="explanation-item">
+                        Ми маємо сертифiкат якостi на нашу каву
+
+                    </div>
+
+
+
+                </div>
+
+
+                <!--<p class="indents-2">Fnteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol.</p>
+                <address class="address-1">
+                    <dl><dt>Address:</dt> <dd>4578 Marmora Road, Glasgow DA04 89GR</dd></dl>
+                    <p><em>800 2345-6789</em></p>
+                </address>-->
+            </div>
+        </section>
+    </main>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="container">
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/%D0%9A%D0%B0%D0%B2%D1%83%D1%81%D1%8F-712640975536072/" class="fa fa-facebook"></a></li>
+                <!--<li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>-->
+            </ul>
+            <!--<div class="copyright">© <span id="copyright-year"></span> |
+                <a href="#">Privacy Policy</a>
+            </div>-->
+        </div>
+        <!--<div class="tm"><a href="#"><img src="images/TM_logo.png" alt=""></a></div>-->
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>

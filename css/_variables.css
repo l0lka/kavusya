@@ -1,0 +1,20 @@
+/*
+@fnt-2: 'Yesteryear', cursive;
+*/
+/* font-family: "NautilusPompiliusRegular"; */
+/*@font-face {
+  font-family: "NautilusPompiliusRegular";
+  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
+  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"),
+  url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}*/
+@font-face {
+  font-family: "NautilusPompiliusRegular";
+  src: url("../fonts/NautilusPompiliusRegular.eot");
+  src: url("../fonts/NautilusPompiliusRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NautilusPompiliusRegular.woff") format("woff"), url("../fonts/NautilusPompiliusRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
